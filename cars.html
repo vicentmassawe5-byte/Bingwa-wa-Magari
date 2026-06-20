@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our premium used car inventory in Tanzania. Toyota, Nissan, Mazda, Subaru and more. Fully inspected vehicles with transparent pricing.">
+    <title>Inventory | Bingwa Wa Magari Used - Tanzania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🚗</span>
+                    <span class="logo-text">BINGWA WA MAGARI</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="cars.html" class="nav-link active">Inventory</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                    <span>💬</span> WhatsApp Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Inventory</h1>
+            <p class="page-subtitle">Browse our collection of premium used vehicles</p>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="filterBrand">Brand</label>
+                    <select id="filterBrand" class="filter-select">
+                        <option value="">All Brands</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Honda">Honda</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterPrice">Price Range</label>
+                    <select id="filterPrice" class="filter-select">
+                        <option value="">Any Price</option>
+                        <option value="20000000">Under TZS 20M</option>
+                        <option value="30000000">Under TZS 30M</option>
+                        <option value="40000000">Under TZS 40M</option>
+                        <option value="50000000">Under TZS 50M</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterYear">Year</label>
+                    <select id="filterYear" class="filter-select">
+                        <option value="">Any Year</option>
+                        <option value="2020">2020+</option>
+                        <option value="2018">2018+</option>
+                        <option value="2015">2015+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterFuel">Fuel Type</label>
+                    <select id="filterFuel" class="filter-select">
+                        <option value="">Any Fuel</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterTransmission">Transmission</label>
+                    <select id="filterTransmission" class="filter-select">
+                        <option value="">Any</option>
+                        <option value="Automatic">Automatic</option>
+                        <option value="Manual">Manual</option>
+                    </select>
+                </div>
+                <button class="btn btn-filter" id="applyFilters">Apply Filters</button>
+                <button class="btn btn-reset" id="resetFilters">Reset</button>
+            </div>
+
+            <!-- Results Count -->
+            <div class="results-info">
+                <span id="resultsCount">Showing all vehicles</span>
+            </div>
+
+            <!-- Car Grid -->
+            <div class="car-grid" id="inventoryGrid">
+                <!-- Cars loaded by JavaScript -->
+            </div>
+
+            <!-- No Results -->
+                <div class="no-results-icon">🔍</div>
+                <svg xmlns="https://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+        </div>
+                <h3>No vehicles found</h3>
+                <p>Try adjusting your filters or browse all inventory.</p>
+                <button class="btn btn-secondary" id="clearFilters">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🚗</span>
+                        <span class="logo-text">BINGWA WA MAGARI</span>
+                    </a>
+                    <p class="footer-desc">Tanzania's most trusted premium used car dealership.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Inventory</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <p>📍 Kinondoni, Dar es Salaam</p>
+                    <p>📞 <a href="tel:+255765456898">+255 765 456 898</a></p>
+                    <p>✉️ <a href="mailto:vicentmassawe5@gmail.com">vicentmassawe5@gmail.com</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h4 class="footer-title">Business Hours</h4>
+                    <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Bingwa Wa Magari Used. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+        <span>💬</span>
+    </a>
+    <a href="tel:+255765456898" class="sticky-call" aria-label="Call Us">
+        <span>📞</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

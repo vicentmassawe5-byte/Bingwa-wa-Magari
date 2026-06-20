@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bingwa Wa Magari Used - Tanzania's most trusted premium used car dealership. Quality vehicles, transparent pricing, professional service.">
+    <meta name="keywords" content="used cars Tanzania, buy cars Dar es Salaam, Toyota Harrier, Nissan X-Trail, Mazda CX-5, premium used cars">
+    <title>Bingwa Wa Magari Used | Premium Used Cars in Tanzania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .logo-img {
+            height: 90px;
+            width: auto;
+            display: block;
+        }
+        .footer-logo .logo-img {
+            height: 60px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Bingwa Wa Magari Used" class="logo-img">
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="cars.html" class="nav-link">Inventory</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                    <span>💬</span> WhatsApp Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Perfect<br><span class="highlight">Used Car</span> in Tanzania</h1>
+                <p class="hero-subtitle">Premium quality vehicles. Transparent pricing. Trusted by 10,000+ happy customers across Dar es Salaam.</p>
+                <div class="hero-cta">
+                    <a href="cars.html" class="btn btn-primary">Browse Inventory</a>
+                        <span>💬</span> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Cars Sold</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Inspected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <h2 class="search-title">Search Your Dream Car</h2>
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <label for="searchBrand">Brand</label>
+                        <select id="searchBrand">
+                            <option value="">All Brands</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Subaru">Subaru</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="searchPrice">Max Price</label>
+                        <select id="searchPrice">
+                            <option value="">Any Price</option>
+                            <option value="20000000">Under TZS 20M</option>
+                            <option value="30000000">Under TZS 30M</option>
+                            <option value="40000000">Under TZS 40M</option>
+                            <option value="50000000">Under TZS 50M</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="searchYear">Year</label>
+                        <select id="searchYear">
+                            <option value="">Any Year</option>
+                            <option value="2020">2020+</option>
+                            <option value="2018">2018+</option>
+                            <option value="2015">2015+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-search">🔍 Search Cars</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured</span>
+                <h2 class="section-title">Premium Vehicles in Stock</h2>
+                <p class="section-subtitle">Hand-picked, fully inspected, ready to drive</p>
+            </div>
+            <div class="car-grid" id="featuredCars">
+                <!-- Cars loaded by JavaScript -->
+            </div>
+            <div class="section-cta">
+                <a href="cars.html" class="btn btn-secondary">View All Inventory →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Us</span>
+                <h2 class="section-title">Why Customers Trust Bingwa</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">100% Inspected</h3>
+                    <p class="feature-desc">Every vehicle undergoes a 150-point professional inspection before listing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Transparent Pricing</h3>
+                    <p class="feature-desc">No hidden fees. The price you see is the price you pay. Full history disclosed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Quality Guarantee</h3>
+                    <p class="feature-desc">30-day mechanical warranty on every purchase. Drive with confidence.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Easy Contact</h3>
+                    <p class="feature-desc">WhatsApp, call, or visit. We respond within minutes, not hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="brands-title">Brands Available</h2>
+            <div class="brands-grid">
+                <div class="brand-item">Toyota</div>
+                <div class="brand-item">Nissan</div>
+                <div class="brand-item">Mazda</div>
+                <div class="brand-item">Subaru</div>
+                <div class="brand-item">Honda</div>
+                <div class="brand-item">Suzuki</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Bought a Toyota Harrier last month. The car was exactly as described. Professional service from start to finish!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">John M.</span>
+                        <span class="author-car">Toyota Harrier 2018</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best used car dealer in Dar es Salaam. Honest pricing, no games. Will definitely recommend to friends."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Sarah K.</span>
+                        <span class="author-car">Nissan X-Trail 2017</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The inspection report gave me peace of mind. 3 months later and the car runs perfectly. Thank you Bingwa!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Michael T.</span>
+                        <span class="author-car">Mazda CX-5 2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Find Your Car?</h2>
+                <p class="cta-text">Browse our inventory or contact us directly. We're here to help you drive home happy.</p>
+                <div class="cta-buttons">
+                    <a href="cars.html" class="btn btn-primary">Browse Cars</a>
+                        <span>💬</span> WhatsApp Us
+                    </a>
+                    <a href="tel:+255781853506" class="btn btn-light">
+                        <span>📞</span> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Bingwa Wa Magari Used" class="logo-img">
+                    </a>
+                    <p class="footer-desc">Tanzania's most trusted premium used car dealership. Quality vehicles, transparent pricing, professional service.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Inventory</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <p>📍 Kinondoni, Dar es Salaam</p>
+                    <p>📞 <a href="tel:+255781853506">+255 765 456 898</a></p>
+                    <p>✉️ <a href="mailto:vicentmassawe5@gmail.com">vicentmassawe5@gmail.com</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h4 class="footer-title">Business Hours</h4>
+                    <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Bingwa Wa Magari Used. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+        <span>💬</span>
+    </a>
+
+    <!-- Sticky Call Button (Mobile) -->
+    <a href="tel:+255781853506" class="sticky-call" aria-label="Call Us">
+        <span>📞</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

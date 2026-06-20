@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View detailed specifications and features of this premium used vehicle. Contact Bingwa Wa Magari Used for inquiries.">
+    <title>Vehicle Details | Bingwa Wa Magari Used</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🚗</span>
+                    <span class="logo-text">BINGWA WA MAGARI</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="cars.html" class="nav-link active">Inventory</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                    <span>💬</span> WhatsApp Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="cars.html">Inventory</a>
+            <span>/</span>
+            <span id="breadcrumbCarName">Vehicle Details</span>
+        </div>
+    </nav>
+
+    <!-- Vehicle Details -->
+    <section class="vehicle-details">
+        <div class="container">
+            <div class="details-grid">
+                <!-- Image Gallery -->
+                <div class="details-gallery">
+                    <div class="gallery-main">
+                        <img id="mainImage" src="" alt="Vehicle Image">
+                    </div>
+                </div>
+
+                <!-- Vehicle Info -->
+                <div class="details-info">
+                    <h1 class="details-title" id="carTitle">Loading...</h1>
+                    <div class="details-price" id="carPrice"></div>
+
+                    <div class="details-badges">
+                        <span class="badge badge-year" id="carYear"></span>
+                        <span class="badge badge-mileage" id="carMileage"></span>
+                        <span class="badge badge-condition" id="carCondition"></span>
+                    </div>
+
+                    <div class="details-specs">
+                        <h3>Specifications</h3>
+                        <div class="specs-grid" id="specsGrid">
+                            <!-- Loaded by JS -->
+                        </div>
+                    </div>
+
+                    <div class="details-description">
+                        <h3>Description</h3>
+                        <p id="carDescription"></p>
+                    </div>
+
+                    <div class="details-actions">
+                            <span>💬</span> Inquire on WhatsApp
+                        </a>
+                        <a href="tel:+255765456898" class="btn btn-call">
+                            <span>📞</span> Call to Book Viewing
+                        </a>
+                    </div>
+
+                    <div class="details-trust">
+                        <div class="trust-item">
+                            <span>✅</span> 150-Point Inspection Passed
+                        </div>
+                        <div class="trust-item">
+                            <span>✅</span> 30-Day Warranty Included
+                        </div>
+                        <div class="trust-item">
+                            <span>✅</span> Full Service History Available
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Vehicles -->
+    <section class="similar-vehicles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Similar Vehicles</h2>
+            </div>
+            <div class="car-grid" id="similarCars">
+                <!-- Loaded by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🚗</span>
+                        <span class="logo-text">BINGWA WA MAGARI</span>
+                    </a>
+                    <p class="footer-desc">Tanzania's most trusted premium used car dealership.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Inventory</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <p>📍 Kinondoni, Dar es Salaam</p>
+                    <p>📞 <a href="tel:+255781853506">+255 781853506</a></p>
+                    <p>✉️ <a href="mailto:vicentmassawe5@gmail.com">vicentmassawe5@gmail.com</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h4 class="footer-title">Business Hours</h4>
+                    <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Bingwa Wa Magari Used. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+        <span>💬</span>
+    </a>
+    <a href="tel:+255781853506" class="sticky-call" aria-label="Call Us">
+        <span>📞</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
